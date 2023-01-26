@@ -1,392 +1,70 @@
-import Hero from "../components/Hero";
-import ReccomendationCategory from "../components/ReccomendationCategory";
-import NavButtons from "../components/NavButtons";
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
+import { fetchRecommendedBookings } from '../actions/bookingActions';
 import Header from "../components/Header";
+import Hero from "../components/Hero";
 import Footer from "../components/Footer";
 import styles from "./HomePage.module.css";
 
-const HomePage = () => {
+/**
+ * Homepage component that displays the booking categories and 4 recommendations per category.
+ * It also includes a way to view more recommendations.
+ */
+const Home = ({ recommendedBookings, fetchRecommendedBookings }) => {
+  useEffect(() => {
+    fetchRecommendedBookings();
+  }, [fetchRecommendedBookings]);
+
+  /**
+   * Renders the booking categories and 4 recommendations per category.
+   * @param {Object} bookings - The recommended bookings object
+   * @returns {JSX.Element} - JSX element of the booking categories and recommendations
+   */
+  const renderBookingCategories = (bookings) => {
+    return Object.keys(bookings).map((category) => (
+      <div key={category}>
+        <h2>{category}</h2>
+        {bookings[category].slice(0, 4).map((booking) => (
+          <div key={booking.id}>
+            <h3>{booking.name}</h3>
+            <img src={booking.imageUrl} alt={booking.name} />
+            <p>Price: {booking.price}</p>
+            <p>Location: {booking.location}</p>
+          </div>
+        ))}
+        <button onClick={() => handleViewMore(category)}>View More</button>
+      </div>
+    ));
+  };
+
+  /**
+   * Handles the view more button click
+   * @param {string} category - The category of the bookings to view more of
+   */
+  const handleViewMore = (category) => {
+    // navigate to a new page or show a modal with more recommendations
+  };
+
   return (
-    <div className={styles.homePage}>
-      <div className={styles.maskGroupParent}>
-        <Hero />
-        <div className={styles.letsExploreRwandaWrapper}>
-          <b className={styles.letsExploreRwanda}>Let’s explore Rwanda</b>
-        </div>
-      </div>
-      <div className={styles.frameParent}>
-        <ReccomendationCategory />
-        <div className={styles.frameGroup}>
-          <div className={styles.activitiesParent}>
-            <b className={styles.activities}>Activities</b>
-            <b className={styles.viewAll}>View all</b>
-          </div>
-          <div className={styles.bookingParent}>
-            <div className={styles.booking}>
-              <div className={styles.maskGroupGroup}>
-                <img
-                  className={styles.maskGroupIcon}
-                  alt=""
-                  src="../mask-group4@2x.png"
-                />
-                <div className={styles.akageraNationalParkParent}>
-                  <div className={styles.akageraNationalPark}>
-                    Volcanoes National Park
-                  </div>
-                  <div className={styles.frameContainer}>
-                    <div className={styles.milesAwayParent}>
-                      <div className={styles.milesAway}>19 miles away</div>
-                      <div className={styles.moneyMouthFace1Wrapper}>
-                        <img
-                          className={styles.moneyMouthFace1Icon}
-                          alt=""
-                          src="../moneymouthface-13.svg"
-                        />
-                      </div>
-                    </div>
-                    <div className={styles.iconlyboldstarParent}>
-                      <img
-                        className={styles.iconlyboldstar}
-                        alt=""
-                        src="../iconlyboldstar3.svg"
-                      />
-                      <div className={styles.milesAway}>4.8</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={styles.booking}>
-              <div className={styles.maskGroupGroup}>
-                <img
-                  className={styles.maskGroupIcon}
-                  alt=""
-                  src="../mask-group5@2x.png"
-                />
-                <div className={styles.akageraNationalParkParent}>
-                  <div className={styles.akageraNationalPark}>
-                    Akagera National Park
-                  </div>
-                  <div className={styles.frameContainer}>
-                    <div className={styles.milesAwayParent}>
-                      <div className={styles.milesAway}>19 miles away</div>
-                      <div className={styles.moneyMouthFace1Wrapper}>
-                        <img
-                          className={styles.moneyMouthFace1Icon}
-                          alt=""
-                          src="../moneymouthface-13.svg"
-                        />
-                      </div>
-                    </div>
-                    <div className={styles.iconlyboldstarParent}>
-                      <img
-                        className={styles.iconlyboldstar}
-                        alt=""
-                        src="../iconlyboldstar3.svg"
-                      />
-                      <div className={styles.milesAway}>4.8</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={styles.booking}>
-              <div className={styles.maskGroupGroup}>
-                <img
-                  className={styles.maskGroupIcon}
-                  alt=""
-                  src="../mask-group6@2x.png"
-                />
-                <div className={styles.akageraNationalParkParent}>
-                  <div className={styles.akageraNationalPark}>
-                    Nyungwe National Park
-                  </div>
-                  <div className={styles.frameContainer}>
-                    <div className={styles.milesAwayParent}>
-                      <div className={styles.milesAway}>19 miles away</div>
-                      <div className={styles.moneyMouthFace1Parent}>
-                        <img
-                          className={styles.moneyMouthFace1Icon}
-                          alt=""
-                          src="../moneymouthface-13.svg"
-                        />
-                        <img
-                          className={styles.moneyMouthFace1Icon}
-                          alt=""
-                          src="../moneymouthface-13.svg"
-                        />
-                      </div>
-                    </div>
-                    <div className={styles.iconlyboldstarParent}>
-                      <img
-                        className={styles.iconlyboldstar}
-                        alt=""
-                        src="../iconlyboldstar3.svg"
-                      />
-                      <div className={styles.milesAway}>4.8</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className={styles.frameGroup}>
-          <div className={styles.activitiesParent}>
-            <b className={styles.activities}>Restaurants</b>
-            <b className={styles.viewAll}>View all</b>
-          </div>
-          <div className={styles.bookingParent}>
-            <div className={styles.booking}>
-              <div className={styles.maskGroupGroup}>
-                <img
-                  className={styles.maskGroupIcon}
-                  alt=""
-                  src="../mask-group7@2x.png"
-                />
-                <div className={styles.akageraNationalParkParent}>
-                  <div className={styles.akageraNationalPark}>Amahoro Bar</div>
-                  <div className={styles.frameContainer}>
-                    <div className={styles.milesAwayParent}>
-                      <div className={styles.milesAway}>19 miles away</div>
-                      <div className={styles.moneyMouthFace1Wrapper}>
-                        <img
-                          className={styles.moneyMouthFace1Icon}
-                          alt=""
-                          src="../moneymouthface-16.svg"
-                        />
-                      </div>
-                    </div>
-                    <div className={styles.iconlyboldstarParent}>
-                      <img
-                        className={styles.iconlyboldstar}
-                        alt=""
-                        src="../iconlyboldstar6.svg"
-                      />
-                      <div className={styles.milesAway}>4.8</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={styles.booking}>
-              <div className={styles.maskGroupGroup}>
-                <img
-                  className={styles.maskGroupIcon}
-                  alt=""
-                  src="../mask-group8@2x.png"
-                />
-                <div className={styles.akageraNationalParkParent}>
-                  <div className={styles.akageraNationalPark}>Brochettes</div>
-                  <div className={styles.frameContainer}>
-                    <div className={styles.milesAwayParent}>
-                      <div className={styles.milesAway}>19 miles away</div>
-                      <div className={styles.moneyMouthFace1Wrapper}>
-                        <img
-                          className={styles.moneyMouthFace1Icon}
-                          alt=""
-                          src="../moneymouthface-16.svg"
-                        />
-                      </div>
-                    </div>
-                    <div className={styles.iconlyboldstarParent}>
-                      <img
-                        className={styles.iconlyboldstar}
-                        alt=""
-                        src="../iconlyboldstar6.svg"
-                      />
-                      <div className={styles.milesAway}>4.8</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={styles.booking}>
-              <div className={styles.maskGroupGroup}>
-                <img
-                  className={styles.maskGroupIcon}
-                  alt=""
-                  src="../mask-group9@2x.png"
-                />
-                <div className={styles.akageraNationalParkParent}>
-                  <div className={styles.akageraNationalPark}>Mizuzu</div>
-                  <div className={styles.frameContainer}>
-                    <div className={styles.milesAwayParent}>
-                      <div className={styles.milesAway}>19 miles away</div>
-                      <div className={styles.moneyMouthFace1Wrapper}>
-                        <img
-                          className={styles.moneyMouthFace1Icon}
-                          alt=""
-                          src="../moneymouthface-16.svg"
-                        />
-                      </div>
-                    </div>
-                    <div className={styles.iconlyboldstarParent}>
-                      <img
-                        className={styles.iconlyboldstar}
-                        alt=""
-                        src="../iconlyboldstar6.svg"
-                      />
-                      <div className={styles.milesAway}>4.8</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className={styles.frameParent6}>
-        <div className={styles.activitiesParent}>
-          <b className={styles.activities}>Bars</b>
-          <b className={styles.viewAll}>View all</b>
-        </div>
-        <div className={styles.bookingParent}>
-          <div className={styles.booking}>
-            <div className={styles.maskGroupGroup}>
-              <img
-                className={styles.maskGroupIcon}
-                alt=""
-                src="../mask-group10@2x.png"
-              />
-              <div className={styles.akageraNationalParkParent}>
-                <div className={styles.akageraNationalPark}>Soko Bar</div>
-                <div className={styles.frameContainer}>
-                  <div className={styles.milesAwayParent}>
-                    <div className={styles.milesAway}>12 miles away</div>
-                    <div className={styles.moneyMouthFace1Parent}>
-                      <img
-                        className={styles.moneyMouthFace1Icon}
-                        alt=""
-                        src="../moneymouthface-19.svg"
-                      />
-                      <img
-                        className={styles.moneyMouthFace1Icon}
-                        alt=""
-                        src="../moneymouthface-19.svg"
-                      />
-                    </div>
-                  </div>
-                  <div className={styles.iconlyboldstarParent}>
-                    <img
-                      className={styles.iconlyboldstar}
-                      alt=""
-                      src="../iconlyboldstar9.svg"
-                    />
-                    <div className={styles.milesAway}>3.8</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className={styles.booking}>
-            <div className={styles.maskGroupGroup}>
-              <img
-                className={styles.maskGroupIcon}
-                alt=""
-                src="../mask-group11@2x.png"
-              />
-              <div className={styles.akageraNationalParkParent}>
-                <div className={styles.akageraNationalPark}>Iriba Bar</div>
-                <div className={styles.frameContainer}>
-                  <div className={styles.milesAwayParent}>
-                    <div className={styles.milesAway}>7 miles away</div>
-                    <div className={styles.moneyMouthFace1Wrapper}>
-                      <img
-                        className={styles.moneyMouthFace1Icon}
-                        alt=""
-                        src="../moneymouthface-19.svg"
-                      />
-                    </div>
-                  </div>
-                  <div className={styles.iconlyboldstarParent}>
-                    <img
-                      className={styles.iconlyboldstar}
-                      alt=""
-                      src="../iconlyboldstar9.svg"
-                    />
-                    <div className={styles.milesAway}>4.1</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className={styles.booking}>
-            <div className={styles.maskGroupGroup}>
-              <img
-                className={styles.maskGroupIcon}
-                alt=""
-                src="../mask-group12@2x.png"
-              />
-              <div className={styles.akageraNationalParkParent}>
-                <div className={styles.akageraNationalPark}>Yard bar</div>
-                <div className={styles.frameContainer}>
-                  <div className={styles.milesAwayParent}>
-                    <div className={styles.milesAway}>19 miles away</div>
-                    <div className={styles.moneyMouthFace1Parent}>
-                      <img
-                        className={styles.moneyMouthFace1Icon}
-                        alt=""
-                        src="../moneymouthface-19.svg"
-                      />
-                      <img
-                        className={styles.moneyMouthFace1Icon}
-                        alt=""
-                        src="../moneymouthface-19.svg"
-                      />
-                      <img
-                        className={styles.moneyMouthFace1Icon}
-                        alt=""
-                        src="../moneymouthface-19.svg"
-                      />
-                    </div>
-                  </div>
-                  <div className={styles.iconlyboldstarParent}>
-                    <img
-                      className={styles.iconlyboldstar}
-                      alt=""
-                      src="../iconlyboldstar9.svg"
-                    />
-                    <div className={styles.milesAway}>4.9</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <NavButtons />
+    <>
       <Header />
-      <Footer />
-      <div className={styles.loginMenu}>
-        <div className={styles.menuItem}>
-          <div className={styles.content}>
-            <div className={styles.akageraNationalPark}>Log in</div>
-          </div>
-        </div>
-        <div className={styles.menuItem}>
-          <div className={styles.content}>
-            <div className={styles.akageraNationalPark}>My Trips</div>
-          </div>
-        </div>
-        <div className={styles.menuItem}>
-          <div className={styles.content}>
-            <div className={styles.akageraNationalPark}>Settings</div>
-          </div>
-        </div>
-        <div className={styles.menuItem}>
-          <div className={styles.content}>
-            <div className={styles.akageraNationalPark}>Payments</div>
-          </div>
-        </div>
-        <div className={styles.menuItem}>
-          <div className={styles.content}>
-            <div className={styles.akageraNationalPark}>Log Out</div>
-          </div>
-        </div>
+      <Hero />
+      <div>
+        <h1>Recommended Bookings</h1>
+        {renderBookingCategories(recommendedBookings)}
       </div>
-    </div>
+      <Footer />
+    </>
   );
 };
 
-export default HomePage;
+const mapStateToProps = (state) => ({
+  recommendedBookings: state.bookings.recommended,
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  fetchRecommendedBookings: () => dispatch(fetchRecommendedBookings()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
+
