@@ -58,7 +58,7 @@ const Home = ({ recommendedBookings, fetchRecommendedBookings }) => {
     <div className="home-container">
       <Header />
       <Hero />
-      {renderBookingCategories(props.recommendedBookings)}
+      {renderBookingCategories(recommendedBookings)}
       <Footer />
     </div>
   );
