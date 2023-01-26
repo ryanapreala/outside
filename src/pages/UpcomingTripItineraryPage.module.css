@@ -1,0 +1,772 @@
+.outside {
+  position: relative;
+  font-weight: 600;
+}
+.travelDatesChild,
+.travelDatesItem {
+  position: absolute;
+  height: 75%;
+  width: 100%;
+  top: 11.25%;
+  right: 0;
+  bottom: 13.75%;
+  left: 0;
+  border-radius: var(--br-lg);
+  background-color: var(--white2);
+}
+.travelDatesItem {
+  height: 60%;
+  width: 16.67%;
+  top: 18.75%;
+  right: 0.93%;
+  bottom: 21.25%;
+  left: 82.4%;
+  background-color: var(--secondary-11);
+}
+.search {
+  position: absolute;
+  top: 0;
+  left: 34.09%;
+  letter-spacing: 1.09px;
+}
+.iconlycurvedsearch,
+.searchParent {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+.iconlycurvedsearch {
+  width: 22.73%;
+  right: 77.27%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.searchParent {
+  width: 100%;
+  right: 0;
+}
+.travelDatesInner {
+  position: absolute;
+  height: 24%;
+  width: 8.8%;
+  top: 38%;
+  right: 4.87%;
+  bottom: 38%;
+  left: 86.33%;
+  font-size: var(--font-size-xs);
+  color: var(--accent1);
+  font-family: var(--font-montserrat);
+}
+.vuesaxoutlinelocationIcon {
+  position: absolute;
+  height: 49.74%;
+  width: 16.78%;
+  top: 20.73%;
+  right: 83.22%;
+  bottom: 29.53%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.addLocation,
+.location {
+  position: absolute;
+  top: 0;
+  left: 28.67%;
+  font-weight: 500;
+}
+.addLocation {
+  top: 55.96%;
+  color: var(--medium-gray1);
+}
+.vuesaxoutlinelocationParent {
+  position: absolute;
+  height: 48.25%;
+  width: 11.92%;
+  top: 28%;
+  right: 77.25%;
+  bottom: 23.75%;
+  left: 10.83%;
+}
+.vuesaxlinearcalendarIcon {
+  position: absolute;
+  height: 49.74%;
+  width: 19.39%;
+  top: 20.73%;
+  right: 80.61%;
+  bottom: 29.53%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.addDates,
+.date {
+  position: absolute;
+  top: 0;
+  left: 33.12%;
+  font-weight: 500;
+}
+.addDates {
+  top: 55.96%;
+  color: var(--medium-gray1);
+}
+.vuesaxlinearcalendarParent {
+  position: absolute;
+  height: 48.25%;
+  width: 10.32%;
+  top: 28%;
+  right: 56.1%;
+  bottom: 23.75%;
+  left: 33.58%;
+}
+.vuesaxlinearprofileIcon {
+  position: absolute;
+  height: 49.74%;
+  width: 17.99%;
+  top: 20.73%;
+  right: 82.01%;
+  bottom: 29.53%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.addGuests,
+.guests {
+  position: absolute;
+  top: 0;
+  left: 30.73%;
+  font-weight: 500;
+}
+.addGuests {
+  top: 55.96%;
+  color: var(--medium-gray1);
+}
+.vuesaxlinearprofileParent {
+  position: absolute;
+  height: 48.25%;
+  width: 11.12%;
+  top: 28%;
+  right: 31.38%;
+  bottom: 23.75%;
+  left: 57.5%;
+}
+.travelDatesChild1,
+.vectorIcon {
+  position: absolute;
+  height: 50.5%;
+  width: 0.07%;
+  top: 27%;
+  right: 72.55%;
+  bottom: 22.5%;
+  left: 27.38%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.travelDatesChild1 {
+  top: 25%;
+  right: 48.63%;
+  bottom: 24.5%;
+  left: 51.3%;
+}
+.frameChild,
+.travelDates {
+  position: relative;
+  width: 1000px;
+  height: 80px;
+  flex-shrink: 0;
+}
+.frameChild {
+  width: 114px;
+  height: 48px;
+}
+.header,
+.travelDatesParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+  font-size: var(--font-size-2xs);
+  color: var(--black2);
+  font-family: var(--font-inter);
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--white2);
+  width: 1440px;
+  padding: var(--padding-4xs) var(--padding-xl);
+  box-sizing: border-box;
+  font-size: var(--font-size-2xl);
+  color: var(--accent1);
+  font-family: var(--font-montserrat);
+}
+.itinerary,
+.myTrips {
+  position: absolute;
+  top: 182px;
+  left: 143px;
+  font-size: var(--h3-size);
+  letter-spacing: 1.25px;
+}
+.itinerary {
+  top: 921px;
+  left: 64px;
+}
+.instagramIcon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.instagramIconParent,
+.outsideParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.outsideParent {
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-md);
+}
+.joinOurNewsletter {
+  position: relative;
+  font-size: var(--body21-size);
+  display: inline-block;
+  width: 478px;
+  height: 56px;
+  flex-shrink: 0;
+}
+.placeholder {
+  flex: 1;
+  position: relative;
+  line-height: 150%;
+}
+.textInput {
+  border-radius: var(--br-sm);
+  background-color: var(--white);
+  border: 1px solid var(--black1);
+  box-sizing: border-box;
+  width: 334px;
+  height: 48px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-2xs);
+  align-items: center;
+  justify-content: flex-start;
+}
+.label {
+  position: relative;
+  letter-spacing: 1.5px;
+}
+.lightPillSelected,
+.textInputParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.lightPillSelected {
+  border-radius: var(--br-sm);
+  background-color: var(--primary1);
+  width: 119px;
+  height: 48px;
+  flex-shrink: 0;
+  padding: var(--padding-3xs) var(--padding-sm);
+  box-sizing: border-box;
+  justify-content: center;
+  text-align: center;
+  color: var(--black1);
+  font-family: var(--body21);
+}
+.textInputParent {
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+  color: var(--dark-gray1);
+  font-family: var(--text-regular-normal1);
+}
+.bySubscribingYou {
+  position: relative;
+  display: inline-block;
+  width: 524px;
+}
+.frameGroup,
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.newsletter {
+  gap: var(--gap-4xs);
+  font-size: var(--text-regular-normal1-size);
+  color: var(--black1);
+  font-family: var(--body21);
+}
+.frameGroup {
+  gap: var(--gap-3xl);
+}
+.booking {
+  position: relative;
+  font-weight: 300;
+}
+.bookingParent,
+.quickLinkParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.bookingParent {
+  gap: var(--gap-4xs);
+  font-size: var(--body21-size);
+}
+.quickLinkParent {
+  gap: var(--gap-lg);
+}
+.termsOfUseParent {
+  font-size: var(--body21-size);
+}
+.frameContainer,
+.legalInformationParent,
+.termsOfUseParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-2xs);
+}
+.frameContainer {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-6xl);
+  font-size: var(--font-size-xl);
+  color: var(--black2);
+  font-family: var(--font-inter);
+}
+.footer,
+.frameParent {
+  width: 1302px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.footer {
+  position: absolute;
+  top: 4120px;
+  left: 0;
+  background-color: var(--secondary-21);
+  width: 1440px;
+  flex-direction: column;
+  padding: var(--padding-2xl) var(--padding-3xl);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: var(--font-size-2xl);
+  color: var(--accent1);
+  font-family: var(--font-montserrat);
+}
+.iconLeftArrow {
+  position: absolute;
+  top: 169px;
+  left: 63px;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+}
+.maskGroupIcon {
+  position: relative;
+  width: 380px;
+  height: 446.95px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.akageraNationalPark {
+  align-self: stretch;
+  position: relative;
+  font-weight: 600;
+  display: none;
+}
+.milesAway {
+  position: relative;
+}
+.milesAwayParent,
+.moneyMouthFace1Parent {
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-8xs);
+}
+.moneyMouthFace1Parent {
+  display: flex;
+  flex-direction: row;
+}
+.milesAwayParent {
+  display: none;
+  flex-direction: column;
+}
+.iconlyboldstar {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.frameDiv,
+.iconlyboldstarParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-7xs);
+  color: var(--black1);
+}
+.frameDiv {
+  width: 374px;
+  justify-content: flex-end;
+  gap: var(--gap-7xl);
+  font-size: var(--body21-size);
+  color: var(--dark-gray1);
+}
+.akageraNationalParkParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: var(--gap-xs);
+}
+.booking1,
+.maskGroupParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.maskGroupParent {
+  flex-direction: column;
+  gap: var(--gap-sm);
+}
+.booking1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-md);
+  background-color: var(--secondary-21);
+  width: 1312px;
+  flex-direction: row;
+  padding: var(--padding-sm);
+  box-sizing: border-box;
+  font-size: var(--subtitle3-size);
+  color: var(--black1);
+}
+.directions,
+.kigali,
+.kigaliRwanda {
+  position: relative;
+  letter-spacing: 1.25px;
+}
+.directions,
+.kigaliRwanda {
+  font-weight: 600;
+}
+.directions {
+  text-decoration: underline;
+  color: var(--secondary-3);
+}
+.details,
+.tripDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.details {
+  gap: var(--gap-6xs);
+  font-size: var(--subtitle2-size);
+  color: var(--black1);
+}
+.tripDetails {
+  position: absolute;
+  top: 136px;
+  left: 481px;
+  gap: var(--gap-3xs);
+  font-size: var(--h4-size);
+}
+.buttonPlain,
+.homePageButtons,
+.homePageButtons1 {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.buttonPlain {
+  border-radius: var(--br-xs);
+  background-color: var(--primary1);
+  height: 60px;
+  flex-shrink: 0;
+  padding: var(--padding-xs) var(--padding-lg);
+  box-sizing: border-box;
+}
+.homePageButtons,
+.homePageButtons1 {
+  position: absolute;
+  top: 150px;
+  left: 976px;
+  text-align: center;
+}
+.homePageButtons1 {
+  top: 303px;
+}
+.bookingGroup {
+  position: absolute;
+  top: 298px;
+  left: 64px;
+  width: 1312px;
+  height: 533.95px;
+  color: var(--black2);
+}
+.akageraNationalParkGroup,
+.booking2 {
+  display: flex;
+  justify-content: flex-start;
+}
+.akageraNationalParkGroup {
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--gap-xs);
+}
+.booking2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-md);
+  background-color: var(--secondary-21);
+  width: 1312px;
+  flex-direction: row;
+  padding: var(--padding-sm);
+  box-sizing: border-box;
+  align-items: flex-start;
+  font-size: var(--subtitle3-size);
+}
+.maskGroupIcon2 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 380px;
+  height: 446.95px;
+  object-fit: cover;
+}
+.brochettes {
+  position: relative;
+  font-size: var(--h4-size);
+  letter-spacing: 1.25px;
+  color: var(--black2);
+}
+.details1,
+.tripDetails1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-6xs);
+}
+.tripDetails1 {
+  position: absolute;
+  top: 136px;
+  left: 481px;
+  gap: var(--gap-3xs);
+  font-size: var(--subtitle2-size);
+}
+.homePageButtons2,
+.homePageButtons3 {
+  position: absolute;
+  top: 150px;
+  left: 976px;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--black2);
+}
+.homePageButtons3 {
+  top: 303px;
+}
+.bookingContainer {
+  position: absolute;
+  top: 1034px;
+  left: 70px;
+  width: 1312px;
+  height: 533.95px;
+}
+.viewDetails {
+  position: relative;
+  text-decoration: underline;
+  letter-spacing: 1.25px;
+  font-weight: 600;
+  color: var(--secondary-4);
+}
+.groupDiv {
+  position: absolute;
+  top: 2224px;
+  left: 72px;
+  width: 1312px;
+  height: 533.95px;
+}
+.iconlyboldstarParent1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-7xs);
+  color: var(--black1);
+}
+.bookingParent1,
+.maskGroupIcon7 {
+  position: absolute;
+  top: 1629px;
+  left: 70px;
+  width: 1312px;
+  height: 533.95px;
+}
+.maskGroupIcon7 {
+  top: 22px;
+  left: 18px;
+  width: 380px;
+  height: 446.95px;
+  object-fit: cover;
+}
+.bookingParent2 {
+  position: absolute;
+  top: 2819px;
+  left: 72px;
+  width: 1312px;
+  height: 533.95px;
+}
+.moreExperiencesTo,
+.viewDetails3 {
+  position: absolute;
+  letter-spacing: 1.25px;
+}
+.viewDetails3 {
+  top: 1449px;
+  left: 551px;
+  font-size: var(--subtitle2-size);
+  text-decoration: underline;
+  font-weight: 600;
+  color: var(--secondary-4);
+}
+.moreExperiencesTo {
+  top: 0;
+  left: 0;
+}
+.akageraNationalPark5 {
+  align-self: stretch;
+  position: relative;
+  font-weight: 600;
+}
+.milesAwayParent3,
+.moneyMouthFace1Wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.milesAwayParent3 {
+  flex-direction: column;
+  gap: var(--gap-8xs);
+}
+.frameParent5 {
+  width: 374px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--body21-size);
+  color: var(--dark-gray1);
+}
+.akageraNationalParkParent3,
+.booking6,
+.bookingParent3 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.akageraNationalParkParent3 {
+  align-self: stretch;
+  flex-direction: column;
+  gap: var(--gap-xs);
+}
+.booking6,
+.bookingParent3 {
+  flex-direction: row;
+}
+.booking6 {
+  border-radius: var(--br-md);
+  background-color: var(--secondary-21);
+  padding: var(--padding-sm);
+}
+.bookingParent3 {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  gap: var(--gap-2xl);
+  font-size: var(--subtitle3-size);
+  color: var(--black1);
+}
+.viewAll {
+  position: absolute;
+  top: 17px;
+  left: 1221px;
+  font-size: var(--body21-size);
+  text-decoration: underline;
+  letter-spacing: 1.5px;
+  color: var(--secondary-4);
+}
+.moreExperiencesToAddToItiParent {
+  position: absolute;
+  top: 3385px;
+  left: 66px;
+  width: 1310px;
+  height: 677.96px;
+  font-size: var(--h4-size);
+  color: var(--black2);
+}
+.booking8 {
+  position: absolute;
+  top: 3441px;
+  left: 976px;
+  border-radius: var(--br-md);
+  background-color: var(--secondary-21);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-sm);
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: var(--subtitle3-size);
+}
+.upcomingTripitineraryPage {
+  position: relative;
+  background-color: var(--secondary-11);
+  width: 100%;
+  height: 4489px;
+  text-align: left;
+  font-size: var(--body21-size);
+  color: var(--black1);
+  font-family: var(--body21);
+}
