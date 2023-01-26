@@ -68,4 +68,8 @@ const mapStateToProps = (state) => ({
   recommendedBookings: state.bookings.recommendedBookings,
 });
 
-export default connect(mapStateToProps, { fetchRecommendedBookings })(Home);
+const mapDispatchToProps = (dispatch) => ({
+  fetchRecommendedBookings: () => dispatch(fetchRecommendedBookings()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
