@@ -1,0 +1,201 @@
+.letsExploreRwanda {
+  position: absolute;
+  top: calc(50% - 43.5px);
+  left: calc(50% - 351.5px);
+  letter-spacing: 1.25px;
+}
+.letsExploreRwandaWrapper {
+  position: absolute;
+  top: calc(50% - 43.5px);
+  left: calc(50% - 351px);
+  width: 703px;
+  height: 87px;
+}
+.maskGroupParent {
+  position: absolute;
+  top: 96px;
+  left: 0;
+  width: 1440px;
+  height: 531px;
+  font-size: var(--h1-size);
+  color: var(--white);
+}
+.activities,
+.viewAll {
+  position: relative;
+  letter-spacing: 1.25px;
+}
+.viewAll {
+  font-size: var(--body21-size);
+  text-decoration: underline;
+  letter-spacing: 1.5px;
+  color: var(--secondary-4);
+}
+.activitiesParent {
+  width: 1304px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.maskGroupIcon {
+  position: relative;
+  width: 380px;
+  height: 446.95px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.akageraNationalPark {
+  align-self: stretch;
+  position: relative;
+  font-weight: 600;
+}
+.milesAway {
+  position: relative;
+}
+.moneyMouthFace1Icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.milesAwayParent,
+.moneyMouthFace1Wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.milesAwayParent {
+  flex-direction: column;
+  gap: var(--gap-8xs);
+}
+.iconlyboldstar {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.frameContainer,
+.iconlyboldstarParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.iconlyboldstarParent {
+  justify-content: flex-start;
+  gap: var(--gap-7xs);
+  color: var(--black1);
+}
+.frameContainer {
+  width: 374px;
+  justify-content: space-between;
+  font-size: var(--body21-size);
+  color: var(--dark-gray1);
+}
+.akageraNationalParkParent,
+.maskGroupGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.akageraNationalParkParent {
+  align-self: stretch;
+  gap: var(--gap-xs);
+}
+.maskGroupGroup {
+  gap: var(--gap-sm);
+}
+.booking,
+.bookingParent,
+.moneyMouthFace1Parent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.booking {
+  border-radius: var(--br-md);
+  background-color: var(--secondary-21);
+  padding: var(--padding-sm);
+}
+.bookingParent,
+.moneyMouthFace1Parent {
+  gap: var(--gap-8xs);
+}
+.bookingParent {
+  gap: var(--gap-2xl);
+  font-size: var(--subtitle3-size);
+}
+.frameGroup,
+.frameParent,
+.frameParent6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.frameParent,
+.frameParent6 {
+  position: absolute;
+  top: 773px;
+  left: 61px;
+  align-items: flex-end;
+  gap: var(--gap-4xl);
+}
+.frameParent6 {
+  top: 2924px;
+  left: 65px;
+  align-items: center;
+  gap: var(--gap-xs);
+}
+.content,
+.loginMenu,
+.menuItem {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.loginMenu,
+.menuItem {
+  box-sizing: border-box;
+}
+.menuItem {
+  width: 213px;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-4xs) 0;
+}
+.loginMenu {
+  position: absolute;
+  top: 80px;
+  left: 1114px;
+  border-radius: var(--br-sm);
+  background-color: var(--white);
+  border: 1px solid var(--medium-gray1);
+  width: 262px;
+  overflow: hidden;
+  display: none;
+  flex-direction: column;
+  padding: var(--padding-md) 0 var(--padding-md) var(--padding-md);
+  gap: var(--gap-3xs);
+  font-size: var(--subtitle3-size);
+}
+.homePage {
+  position: relative;
+  background-color: var(--secondary-11);
+  width: 100%;
+  height: 4036px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--h3-size);
+  color: var(--black1);
+  font-family: var(--body21);
+}

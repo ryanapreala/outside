@@ -1,0 +1,212 @@
+.outside {
+  position: relative;
+  font-weight: 600;
+}
+.travelDatesChild,
+.travelDatesItem {
+  position: absolute;
+  height: 75%;
+  width: 100%;
+  top: 11.25%;
+  right: 0;
+  bottom: 13.75%;
+  left: 0;
+  border-radius: var(--br-lg);
+  background-color: var(--white2);
+}
+.travelDatesItem {
+  height: 60%;
+  width: 16.67%;
+  top: 18.75%;
+  right: 0.93%;
+  bottom: 21.25%;
+  left: 82.4%;
+  background-color: var(--secondary-11);
+}
+.search {
+  position: absolute;
+  top: 0;
+  left: 34.09%;
+  letter-spacing: 1.09px;
+}
+.iconlycurvedsearch,
+.searchParent {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+.iconlycurvedsearch {
+  width: 22.73%;
+  right: 77.27%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.searchParent {
+  width: 100%;
+  right: 0;
+}
+.travelDatesInner {
+  position: absolute;
+  height: 24%;
+  width: 8.8%;
+  top: 38%;
+  right: 4.87%;
+  bottom: 38%;
+  left: 86.33%;
+  font-size: var(--font-size-xs);
+  color: var(--accent1);
+  font-family: var(--font-montserrat);
+}
+.vuesaxoutlinelocationIcon {
+  position: absolute;
+  height: 49.74%;
+  width: 16.78%;
+  top: 20.73%;
+  right: 83.22%;
+  bottom: 29.53%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.addLocation,
+.location {
+  position: absolute;
+  top: 0;
+  left: 28.67%;
+  font-weight: 500;
+}
+.addLocation {
+  top: 55.96%;
+  color: var(--medium-gray1);
+}
+.vuesaxoutlinelocationParent {
+  position: absolute;
+  height: 48.25%;
+  width: 11.92%;
+  top: 28%;
+  right: 77.25%;
+  bottom: 23.75%;
+  left: 10.83%;
+}
+.vuesaxlinearcalendarIcon {
+  position: absolute;
+  height: 49.74%;
+  width: 19.39%;
+  top: 20.73%;
+  right: 80.61%;
+  bottom: 29.53%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.addDates,
+.date {
+  position: absolute;
+  top: 0;
+  left: 33.12%;
+  font-weight: 500;
+}
+.addDates {
+  top: 55.96%;
+  color: var(--medium-gray1);
+}
+.vuesaxlinearcalendarParent {
+  position: absolute;
+  height: 48.25%;
+  width: 10.32%;
+  top: 28%;
+  right: 56.1%;
+  bottom: 23.75%;
+  left: 33.58%;
+}
+.vuesaxlinearprofileIcon {
+  position: absolute;
+  height: 49.74%;
+  width: 17.99%;
+  top: 20.73%;
+  right: 82.01%;
+  bottom: 29.53%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.addGuests,
+.guests {
+  position: absolute;
+  top: 0;
+  left: 30.73%;
+  font-weight: 500;
+}
+.addGuests {
+  top: 55.96%;
+  color: var(--medium-gray1);
+}
+.vuesaxlinearprofileParent {
+  position: absolute;
+  height: 48.25%;
+  width: 11.12%;
+  top: 28%;
+  right: 31.38%;
+  bottom: 23.75%;
+  left: 57.5%;
+}
+.travelDatesChild1,
+.vectorIcon {
+  position: absolute;
+  height: 50.5%;
+  width: 0.07%;
+  top: 27%;
+  right: 72.55%;
+  bottom: 22.5%;
+  left: 27.38%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.travelDatesChild1 {
+  top: 25%;
+  right: 48.63%;
+  bottom: 24.5%;
+  left: 51.3%;
+}
+.frameChild,
+.travelDates {
+  position: relative;
+  width: 1000px;
+  height: 80px;
+  flex-shrink: 0;
+}
+.frameChild {
+  width: 114px;
+  height: 48px;
+}
+.header,
+.travelDatesParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+  font-size: var(--font-size-2xs);
+  color: var(--black2);
+  font-family: var(--font-inter);
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--white2);
+  width: 1440px;
+  padding: var(--padding-4xs) var(--padding-xl);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-2xl);
+  color: var(--accent1);
+  font-family: var(--font-montserrat);
+}
