@@ -1,14 +1,14 @@
+.navItems{
+  display:flex
+}
+
 .navigationOval{
   /* Rectangle 4 */
-
-
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 11.25%;
-  bottom: 13.75%;
-
-  /* White */
+  display:flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-basis: 1500px;
 
   background: #F8F8F8;
   border-radius: 72.6667px;
@@ -18,18 +18,18 @@
 .searchButton {
   /* Rectangle 5 */
 
-  position: absolute;
-  left: 82.4%;
+  /* position: absolute; */
+  /* left: 82.4%;
   right: 0.93%;
   top: 18.75%;
-  bottom: 21.25%;
+  bottom: 21.25%; */
 
   /* Secondary 1 */
-
+  height: 48px;
+  width: 166.6666717529297px;
+  border-radius: 72.66667175292969px;
   background: #FAE0A5;
-  border-radius: 72.6667px;
   border-color: #FAE0A5;
-
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
@@ -40,27 +40,46 @@
   
 }
 
+
+
 .searchText {
-  /* Search */
 
-
-  position: absolute;
-  left: 89.33%;
+  /* position: absolute; */
+  /* left: 89.33%;
   right: 4.87%;
   top: 38%;
-  bottom: 39.5%;
+  bottom: 39.5%; */
 
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-size: 14.5333px;
   line-height: 18px;
-  /* identical to box height */
-
   letter-spacing: 1.09px;
-
-  /* Accent */
-
   color: #D06224;
+
+}
+
+
+.navText {
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #090909;
+}
+
+.navAdds {
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #C8C8C8;
 
 }

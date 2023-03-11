@@ -24,6 +24,13 @@
     background: #F8F8F8;
 }
 
+.headerArrangement {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
 .brandOutside {
     /* outside */
 
