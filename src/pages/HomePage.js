@@ -8,7 +8,7 @@ const HomePage = () => {
             <Header />
             <Hero />
             <NavButtons />
-            <BookingList />
+            <BookingList listTitle={"Recommended for you"}/>
         </>
     );
 }

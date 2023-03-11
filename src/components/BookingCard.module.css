@@ -1,0 +1,36 @@
+.cardBody {
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 10px;
+
+    width: 420px;
+    height: 612.95px;
+
+    background: #FDF2DB;
+    border-radius: 15px;
+}
+
+.cardImg {
+    
+}
+
+.cardTitle {
+
+}
+
+.cardDistance {
+
+}
+
+.cardPrice {
+
+}
+
+.cardRating {
+
+}
+

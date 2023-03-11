@@ -1,5 +1,5 @@
 import styles from "./BookingList.module.css";
-
+import BookingCard from "./BookingCard";
 const BookingList = ({listTitle}) => {
     return (
         <div className={styles.container}>
@@ -10,6 +10,10 @@ const BookingList = ({listTitle}) => {
             </div>
             <div>
                 <div><a>View all</a></div>
+                
+            </div>
+            <div>
+                
             </div>
         </div>
     );
