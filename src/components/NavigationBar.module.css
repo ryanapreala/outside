@@ -83,3 +83,51 @@
   color: #C8C8C8;
 
 }
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  /* Rectangle 6 */
+
+  /* Secondary 1 */
+
+  
+}
+
+.dropBtn {
+  background: #FAE0A5;
+  border-color:#FAE0A5;
+  color: #D06224;
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 50px;
+  height:48px;
+  width:114px;
+  line-height: 1;
+
+
+}
+
+.dropdownContent {
+  background-color:#C8C8C8;
+  display: none;
+  position: absolute;
+  
+  border-radius: 10px;
+  z-index: 1;
+  /* background-color: #fff */
+}
+
+.dropdownContent a{
+  color: #090909;
+  padding: 12px 50px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdownContent{
+  display: block;
+}
+
+
