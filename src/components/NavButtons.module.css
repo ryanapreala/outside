@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .leftButtons, .rightButtons {
+    display: flex;
+  }
+  
+  .leftButtons button {
+    margin-right: 10px;
+  }
+  
+  .rightButtons button {
+    margin-left: 10px;
+  }
+
+
+.btnStyle1{
+/* Secondary 2 */
+
+    background: #FDF2DB;
+    border-color: #FDF2DB;
+    border-radius: 8px;
+    padding: 16px 48px;
+    gap: 10px;
+
+    width: 300px;
+    height: 60px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 1.25px;
+}
+
+.btnStyle2 {
+    background: #FDF2DB;
+    border-color: #FDF2DB;
+    border-radius: 8px;
+    padding: 16px 48px;
+    gap: 16px;
+
+    width: 232px;
+    height: 60px;
+
+    /* Button Medium */
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 1.25px;
+
+    /* Accent */
+
+    color: #D06224;
+
+}
