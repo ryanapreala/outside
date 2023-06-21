@@ -1,4 +1,3 @@
-import {Button} from 'react-bootstrap';
 import NavigationBar from '../components/NavigationBar';
 
 const HomePage = () => {
