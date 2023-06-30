@@ -19,12 +19,20 @@ const SettingsHeader = styled("h1")({
     marginBottom: 50
 })
 
-const SettingsGrid = styled("div")({
-    display: "grid",
-    gridTemplateColumns: "1fr 1fr 1fr",
-    gridTemplateRows: "auto",
-    gridGap: 90
-})
+const SettingsGrid = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 90px;
+
+    @media (max-width: 1280px) {
+        grid-template-columns: 1fr 1fr
+    }
+    
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr
+    }
+`;
 
 const SettingsPage = () => {
     return (
