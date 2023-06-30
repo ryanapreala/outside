@@ -11,13 +11,14 @@ const SettingsHeader = styled("h1")({
     fontFamily: "Open Sans",
     fontWeight: 700,
     fontSize: 64,
+    marginBottom: 50
 })
 
 const SettingsGrid = styled("div")({
     display: "grid",
     gridTemplateColumns: "1fr 1fr 1fr",
     gridTemplateRows: "auto",
-    gridGap: 32
+    gridGap: 90
 })
 
 const SettingsPage = () => {

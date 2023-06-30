@@ -1,24 +1,33 @@
 import styled from "@emotion/styled"
 
-const OptionContainer = styled("div")({
-    display: "flex",
-    flexDirection: "column",
-    width: 356,
-    height: 172,
-    borderColor: "#090909",
-    borderWidth: 1,
-    borderStyle: "solid",
-    borderRadius: 10,
-    padding: 16
-})
+const OptionContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 356px;
+    height: 172px;
+    border-color: #090909;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 16px;
+    cursor: pointer;
+    background-color: white;
+    transition: background-color 0.2s ease-in-out;
 
-const OptionHeader = styled("h5")({
+    &:hover {
+        background-color: #FDF2DB;
+    }
+`;
+
+const OptionHeader = styled("span")({
     fontFamily: "Inter",
     fontWeight: 600,
-    fontSize: 26
+    fontSize: 20,
+    marginTop: 10,
+    marginBottom: 5
 })
 
-const OptionSubHeader = styled("h6")({
+const OptionSubHeader = styled("span")({
     fontFamily: "Inter",
     fontWeight: 400,
     fontSize: 16
