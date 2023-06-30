@@ -24,7 +24,7 @@ const OptionSubHeader = styled("h6")({
     fontSize: 16
 })
 
-const SettingBox = ({ children, settingName, settingDescription }) => {
+const SettingCard = ({ children, settingName, settingDescription }) => {
     return (
         <OptionContainer>
             {children}
@@ -34,4 +34,4 @@ const SettingBox = ({ children, settingName, settingDescription }) => {
     )
 }
 
-export default SettingBox;
+export default SettingCard;
