@@ -4,6 +4,7 @@ import TextField from '@mui/material/TextField';
 import LocationIcon from '../Icons/LocationIcon.js';
 import CalendarIcon from '../Icons/CalendarIcon.js';
 import ProfileIcon from '../Icons/ProfileIcon.js';
+import SearchIcon from '../Icons/SearchIcon.js';
 
 
 const Header = styled('header')({
@@ -50,7 +51,7 @@ const Rectangle4 = styled('div')({
   position: 'absolute',
   width: '1000px',
   height: '60px',
-  left: '0',
+  left: '10',
   top: '0',
   backgroundColor: '#F9FAFB',
   borderRadius: '72.67px',
@@ -60,8 +61,8 @@ const SearchBackground = styled('div')({
   position: 'absolute',
   width: '166.67px',
   height: '48px',
-  left: '824px',
-  top: '8px',
+  left: '630px',
+  top: '14px',
   backgroundColor: '#FAE0A5', // Update the background color here
   borderRadius: '72.67px',
 });
@@ -71,8 +72,8 @@ const SearchContainer = styled('div')({
   position: 'absolute',
   width: '180px',
   height: '34px',
-  left: '824px',
-  top: '13px',
+  left: '650px',
+  top: '14px',
   display: 'flex',
   justifyContent: 'start',
   alignItems: 'center',
@@ -80,25 +81,12 @@ const SearchContainer = styled('div')({
 
 const Search = styled('div')({
   position: 'absolute',
-  left: '60px',
-  top: '-30%',
+  left: '30px',
+  top: '-40%',
   color: '#D97706',
   fontSize: '14px',
   fontWeight: 'bold',
 });
-
-const IconlyCurvedSearch = styled('div')({
-  position: 'absolute',
-  width: '20px',
-  height: '19.20px',
-  left: '0',
-  top: '7px',
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'start',
-  alignItems: 'start',
-});
-
 const LocationContainer = styled('div')({
   position: 'absolute',
   width: '150px',
@@ -109,8 +97,6 @@ const LocationContainer = styled('div')({
   justifyContent: 'start',
   alignItems: 'center',
 });
-
-
 
 const LocationLabel = styled('div')({
   position: 'absolute',
@@ -212,9 +198,6 @@ const ProfileDropdownBack = styled('div')({
   borderRadius: '50px',
 });
 
-
-
-
 const Group10 = styled('div')({
   position: 'absolute',
   width: '70px',
@@ -240,9 +223,7 @@ const NavigationBar = () => (
         <Rectangle4 />
         <SearchBackground />
         <SearchContainer>
-          <IconlyCurvedSearch>
-            <div className="Search" />
-          </IconlyCurvedSearch>
+          <SearchIcon></SearchIcon>
           <Search>
           <TextField
               label="Search"
