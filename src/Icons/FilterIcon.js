@@ -1,3 +1,6 @@
+import React from 'react';
+
+const FilterIcon = () => (
 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="Iconly/Light-Outline/Filter">
 <g id="Group 10">
@@ -15,3 +18,5 @@
 </g>
 </g>
 </svg>
+);
+export default FilterIcon;
