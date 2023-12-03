@@ -1,6 +1,6 @@
 import Hero from '../components/Hero';
 import NavigationBar from '../components/NavigationBar';
-import NavigButtons from '../components/NavigButtons';
+
 
 const HomePage = () => {
     return (
@@ -8,6 +8,8 @@ const HomePage = () => {
         <div>
             <NavigationBar />
             <Hero />
+         
+            
            
             
             

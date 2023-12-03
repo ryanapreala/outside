@@ -20,14 +20,19 @@ const ButtonContainer = styled('div')({
   gap: 32,
 });
 
-const NavigButtons = () => {
-    <Container>
-      <ButtonContainer>
-        <ButtonStyle text={"SPACES"} />
-        <ButtonStyle text={"EXPERIENCE"} />
-      </ButtonContainer>
-      <ButtonFilter />
-    </Container>
-};
+const NavigationButtons = () => {
+    return (
+      <div>
+        <Container>
+          <ButtonContainer>
+            <ButtonStyle text={"SPACES"} />
+            <ButtonStyle text={"EXPERIENCE"} />
+          </ButtonContainer>
+          <ButtonFilter />
+        </Container>
+      </div>
+    );
+  };
+  
 
-export default NavigButtons;
+export default NavigationButtons;
