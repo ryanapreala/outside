@@ -1,0 +1,14 @@
+<svg width="118" height="118" viewBox="0 0 118 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Image / Loading">
+<path id="Ellipse 1" d="M115 59C115 70.0758 111.716 80.9028 105.562 90.1119C99.4089 99.3211 90.6629 106.499 80.4303 110.737C70.1976 114.976 58.9379 116.085 48.0749 113.924C37.212 111.763 27.2338 106.43 19.402 98.598C11.5703 90.7662 6.2368 80.788 4.07602 69.9251C1.91525 59.0621 3.02424 47.8024 7.26275 37.5697C11.5013 27.3371 18.6789 18.5911 27.8881 12.4377C37.0972 6.28434 47.9242 3 59 3" stroke="url(#paint0_angular_444_23744)" stroke-width="5"/>
+</g>
+<defs>
+<radialGradient id="paint0_angular_444_23744" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(59 58.7657) rotate(-90) scale(55.7657 52.4166)">
+<stop stop-color="white" stop-opacity="0"/>
+<stop offset="0.385417" stop-color="white" stop-opacity="0.426829"/>
+<stop offset="0.671875" stop-color="#888386"/>
+<stop offset="0.932292" stop-color="#555859"/>
+<stop offset="1"/>
+</radialGradient>
+</defs>
+</svg>

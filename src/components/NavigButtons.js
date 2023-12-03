@@ -1,8 +1,8 @@
-import React from 'react';
+import * as React from 'react';
 import { styled } from '@mui/system';
 
-import ButtonStyle from './ButtonStyle';
-import ButtonFilter from './ButtonFilter';
+import ButtonStyle from '../components/ButtonStyle';
+import ButtonFilter from '../components/ButtonFilter';
 
 const Container = styled('div')({
   width: '100%',

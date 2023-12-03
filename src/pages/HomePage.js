@@ -8,7 +8,8 @@ const HomePage = () => {
         <div>
             <NavigationBar />
             <Hero />
-            <NavigButtons />
+           
+            
             
         </div>
     );

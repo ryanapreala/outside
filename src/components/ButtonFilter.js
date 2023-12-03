@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { styled } from '@mui/system';
-import FilterIcon from '../Icons/FilterIcon';
+import FilterIcon from '../Icons/FilterIcon.js';
+
 
 const ButtonContainer = styled('div')({
   display: 'inline-flex',
@@ -18,10 +19,7 @@ const IconContainer = styled('div')({
   marginRight: 16,
 });
 
-const IconImage = styled('img')({
-  width: '100%',
-  height: '100%',
-});
+
 
 const ButtonText = styled('div')({
   color: '#D06224',
@@ -55,7 +53,7 @@ const ButtonFilter = () => {
       onClick={handleClick}
     >
       <IconContainer>
-        <IconImage src={FilterIcon} alt="Filter Icon" />
+        <FilterIcon />
       </IconContainer>
       <ButtonText>FILTER</ButtonText>
     </ButtonContainer>
