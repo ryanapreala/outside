@@ -1,15 +1,16 @@
 import Hero from '../components/Hero';
 import NavigationBar from '../components/NavigationBar';
-import Buttons from '../components/Buttons'
+import ButtonChoose from '../components/ButtonChoose';
 
 const HomePage = () => {
     return (
 
         <div>
-            {/* <NavigationBar />
-            <Hero /> */}
+            <NavigationBar />
+            <Hero />
+            <ButtonChoose />
          
-            <Buttons/>
+    
            
             
             
