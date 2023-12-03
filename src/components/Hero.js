@@ -3,14 +3,14 @@ import { styled } from '@mui/system';
 
 const HeroContainer = styled('div')({
   width: '100%',
-  height: '100%',
+  height: '222px',
   position: 'relative',
   overflow: 'hidden',
 });
 
 const BackgroundImage = styled('img')({
   width: '100%',
-  height: '100%',
+  height: '222px',
   objectFit: 'cover',
 });
 
