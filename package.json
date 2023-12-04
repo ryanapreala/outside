@@ -15,6 +15,7 @@
         "@types/react": "^18.0.17",
         "@types/react-dom": "^18.0.6",
         "bootstrap": "^5.2.3",
+        "next": "^14.0.3",
         "react": "^18.2.0",
         "react-bootstrap": "^2.7.2",
         "react-dom": "^18.2.0",
@@ -24,11 +25,17 @@
         "web-vitals": "^2.1.2"
     },
     "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "start": "next start",
+        "build": "next build",
+        "lint": "next lint",
+        "dev": "next dev",
+        "react-scripts start": "react-scripts start",
+        "react-scripts build": "react-scripts build",
+        "react-scripts test": "react-scripts test",
+        "react-scripts eject": "react-scripts eject"
+        
     },
+    
     "eslintConfig": {},
     "browserslist": {
         "production": [
